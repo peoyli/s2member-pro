@@ -135,6 +135,7 @@ if(!class_exists('c_ws_plugin__s2member_pro_login_widget'))
 				echo '<div class="ws-plugin--s2member-pro-login-widget-password">'."\n";
 				echo '<label for="ws-plugin--s2member-pro-login-widget-password">'._x('Password', 's2member-front', 's2member').':</label><br />'."\n";
 				echo '<input type="password" name="pwd" id="ws-plugin--s2member-pro-login-widget-password" class="form-control" title="Password" />'."\n";
+				do_action('s2member_pro_login_widget', get_defined_vars());
 				echo '</div>'."\n";
 
 				echo '<div class="ws-plugin--s2member-pro-login-widget-lost-password">'."\n";
